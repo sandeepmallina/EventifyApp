@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5EBB2"
+    tools:context=".MainActivityEventDisplay"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/view"
+            android:layout_width="410dp"
+            android:layout_height="70dp"
+            android:background="#829460"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:fontStyle="italic"
+            android:text="Events"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="374dp"
+            android:layout_height="485dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/cardcontainer11"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/event11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Birthday"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#DBA39A"
+                            android:textFontWeight="1000"
+                            android:textSize="30dp"/>
+                        <TextView
+                            android:id="@+id/description111"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/event11"
+                            android:text="relatives birthday"
+                            android:textColor="@android:color/holo_purple"
+                            android:textFontWeight="1000"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="25dp"/>
+                        <TextView
+                            android:id="@+id/date_given111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description111"
+                            android:text="12-04-2023"
+                            android:textColor="#6B6A6C"
+                            android:textFontWeight="1000"
+
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/time_given111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description111"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="50dp"
+                            android:text="12:15 AM"
+                            android:textColor="#6B6A6C"
+
+                            android:textFontWeight="1000"
+                            android:textSize="20dp"/>
+                        <Button
+                            android:id="@+id/delete111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Delete"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/cardcontainer"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/event111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Anniversary"
+                            android:textColor="#76A602"
+                            android:layout_marginBottom="10dp"
+
+                            android:textFontWeight="1000"
+                            android:textSize="30dp"/>
+                        <TextView
+                            android:id="@+id/description11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/event111"
+                            android:text="Marriage Anniversary"
+                            android:textColor="@android:color/holo_purple"
+                            android:textFontWeight="1000"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="25dp"/>
+                        <TextView
+                            android:id="@+id/date_given11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description11"
+                            android:text="18-05-2023"
+                            android:textColor="#6B6A6C"
+                            android:textFontWeight="1000"
+
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/time_given11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description11"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="50dp"
+                            android:text="8:20 PM"
+                            android:textColor="#6B6A6C"
+                            android:textFontWeight="1000"
+                            android:textSize="20dp"/>
+
+                        <Button
+                            android:id="@+id/delete11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Delete"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.439"
+            app:srcCompat="@drawable/baseline_add_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:fitsSystemWindows="true"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

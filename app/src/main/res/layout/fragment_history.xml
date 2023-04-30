@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentHistory">
+    <TextView
+        android:id="@+id/events_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="History"
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="374dp"
+        android:layout_height="485dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/events_header"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/container003"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer113"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/board_meeting"
+                        android:textColor="#DBA39A"
+                        android:textFontWeight="1000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/description1112"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event112"
+                        android:layout_marginBottom="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/event1_discreption"
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_given1112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description1112"
+                        android:text="03-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given1112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description1112"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="1:15 PM"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer001"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event11112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/project_meeting"
+                        android:textColor="#76A602"
+                        android:textFontWeight="1000"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/description11112"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event11112"
+                        android:layout_marginBottom="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/event2_discreption"
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/date_given11120"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11112"
+                        android:text="02-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11112"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="8:20 AM"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer111"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Birthday"
+                        android:textColor="#DBA39A"
+                        android:textFontWeight="1000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/description111"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event11"
+                        android:layout_marginBottom="10dp"
+
+                        android:justificationMode="inter_word"
+                        android:text=" birthday celebration at Chekmukhi Gardens! This special event will be attended by office Colleagues. Come and celebrate with us as we make unforgettable memories together."
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_given111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description111"
+                        android:text="05-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description111"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="2:20 PM"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="E-Sports"
+                        android:textColor="#76A602"
+
+                        android:textFontWeight="1000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/description11"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event111"
+                        android:layout_marginBottom="10dp"
+                        android:text="The 2023 Call of Duty League with a prize pool of $500,000 will take place from December 2nd, 2022 to May 28th, 20231"
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_given11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11"
+                        android:text="18-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given1101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="@string/_8_20_am"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="53dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_history"
+        app:layout_constraintBottom_toBottomOf="@+id/events_header"
+        app:layout_constraintEnd_toEndOf="@+id/events_header"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="@+id/events_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

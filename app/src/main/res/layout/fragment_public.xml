@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_public"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentpublic">
+    <TextView
+        android:id="@+id/events_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Hello,Sandeep"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="374dp"
+        android:layout_height="485dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/events_header"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Charity Event"
+                        android:textColor="#DBA39A"
+                        android:textFontWeight="1000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/description111"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event11"
+                        android:layout_marginBottom="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Location:Near Kotipalli Bus stand Rajahmundry .Event regarding red cross organization event about 2 hours discussion about awareness among teenagers and adults"
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_given111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description111"
+                        android:text="12-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description111"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="12:15 PM"
+                        android:textColor="#6B6A6C"
+
+                        android:textFontWeight="1000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/delete111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="Delete" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="E-Sports"
+                        android:textColor="#76A602"
+
+                        android:textFontWeight="1000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/description11"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/event111"
+                        android:layout_marginBottom="10dp"
+                        android:text="The 2023 Call of Duty League with a prize pool of $500,000 will take place from December 2nd, 2022 to May 28th, 20231"
+                        android:textColor="@color/black"
+                        android:textFontWeight="1000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_given11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11"
+                        android:text="18-05-2023"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/time_given11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description11"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:text="@string/_8_20_am"
+                        android:textColor="#6B6A6C"
+                        android:textFontWeight="1000"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/delete11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/delete" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/addevent001"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

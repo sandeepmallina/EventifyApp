@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Eventify</string>
+    <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="events">Events</string>
+    <string name="account">Account</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string name="Chill">Chill</string>
+    <string name="Mandatory">Mandatory</string>
+    <string name="Important">Important</string>
+    <string name="app_discreption">Welcome to Eventify, the app that helps you manage your events with ease.With Eventify, you can create, edit, and share events with your friends and family. You can also set reminders, add photos, and view past events. Whether it’s a birthday party, a wedding, or a business meeting, Eventify will make sure you don’t miss any important moments. Download Eventify today and start planning your next event!</string>
+    <string name="get_started">Get Started</string>
+    <string name="feature01">Sort the events based on the categories, store the record of accomplished events.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="submit">Submit</string>
+    <string name="board_meeting">Board Meeting</string>
+    <string name="event1_discreption">Location: Conference Room A, ABC Corporation Headquarters Attendees: John Smith (CEO), Jane Doe (CFO), Bob Johnson (COO), Sarah Lee (CTO)</string>
+    <string name="event2_discreption">Location: Conference Room B, ABC Corporation Headquarters Attendees: Project Team Members</string>
+    <string name="project_meeting">Project Meeting</string>
+    <string name="delete">Delete</string>
+    <string name="_8_20_am">8:20 AM</string>
+    <string name="wtd2">The app can promptly alert the user based on the event schedules and remind them of the upcoming events.</string>
+    <string name="skip">Skip</string>
+</resources>
